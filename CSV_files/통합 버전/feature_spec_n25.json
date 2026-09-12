@@ -1,0 +1,52 @@
+{
+  "created_from": "04_Collinearity_Recheck.ipynb",
+  "source_data": "CSV_files/통합 버전/model_df_clean_n25.csv",
+  "n_rows": 27654,
+  "n_positive": 5246,
+  "target": "target_churn_after_25",
+  "group_col": "id_student",
+  "holdout_key": "code_presentation",
+  "numeric_features": [
+    "num_of_prev_attempts",
+    "studied_credits",
+    "date_registration",
+    "total_click_25",
+    "active_days_25",
+    "distinct_resources_25",
+    "no_vle_activity_25",
+    "n_opportunity_25",
+    "n_submitted_25",
+    "avg_score_25",
+    "avg_submit_delay_25"
+  ],
+  "categorical_features": [
+    "gender",
+    "region",
+    "highest_education",
+    "imd_band",
+    "age_band",
+    "disability",
+    "code_module",
+    "presentation_period"
+  ],
+  "nan_features": [
+    "avg_score_25",
+    "avg_submit_delay_25"
+  ],
+  "derived_features": {
+    "presentation_period": "code_presentation.str[-1] (B=2월 개강, J=10월 개강)"
+  },
+  "excluded": {
+    "id_student": "그레인 식별자 (groups로 사용)",
+    "landmark_day": "상수(25)",
+    "eligible_at_25": "상수(1)",
+    "cohort_status_25": "상수(model_eligible)",
+    "final_result": "누수 — 타깃의 출처",
+    "date_unregistration": "누수 — 25일 이후 정보",
+    "n_missing_25": "n_opportunity_25 - n_submitted_25로 복원 가능 (VIF inf)",
+    "submission_rate_25": "n_submitted_25 / n_opportunity_25로 복원 가능 (VIF inf)",
+    "no_assessment_opportunity_25": "1{n_opportunity_25 == 0}로 복원 가능 (VIF 6.39)",
+    "code_presentation": "학기 holdout과 충돌 — presentation_period로 대체, 분할 키로만 사용"
+  },
+  "max_vif": 3.11
+}
