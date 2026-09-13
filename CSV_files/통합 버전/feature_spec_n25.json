@@ -1,5 +1,5 @@
 {
-  "created_from": "04_Collinearity_Recheck.ipynb",
+  "created_from": "05_Collinearity_Recheck.ipynb",
   "source_data": "CSV_files/통합 버전/model_df_clean_n25.csv",
   "n_rows": 27654,
   "n_positive": 5246,
@@ -17,7 +17,8 @@
     "n_opportunity_25",
     "n_submitted_25",
     "avg_score_25",
-    "avg_submit_delay_25"
+    "avg_submit_delay_25",
+    "n_banked_25"
   ],
   "categorical_features": [
     "gender",
@@ -36,6 +37,7 @@
   "derived_features": {
     "presentation_period": "code_presentation.str[-1] (B=2월 개강, J=10월 개강)"
   },
+  "definition_version": "0913_01 — 평가 기회 weight 조건 없음, 이월 평가는 학생별 기회에서 제외(n_banked_25)",
   "excluded": {
     "id_student": "그레인 식별자 (groups로 사용)",
     "landmark_day": "상수(25)",
@@ -45,8 +47,8 @@
     "date_unregistration": "누수 — 25일 이후 정보",
     "n_missing_25": "n_opportunity_25 - n_submitted_25로 복원 가능 (VIF inf)",
     "submission_rate_25": "n_submitted_25 / n_opportunity_25로 복원 가능 (VIF inf)",
-    "no_assessment_opportunity_25": "1{n_opportunity_25 == 0}로 복원 가능 (VIF 6.39)",
+    "no_assessment_opportunity_25": "1{n_opportunity_25 == 0}로 복원 가능 (VIF 5.71)",
     "code_presentation": "학기 holdout과 충돌 — presentation_period로 대체, 분할 키로만 사용"
   },
-  "max_vif": 3.11
+  "max_vif": 2.95
 }
