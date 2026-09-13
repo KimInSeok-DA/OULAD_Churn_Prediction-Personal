@@ -1,0 +1,236 @@
+{
+  "created_from": "Notebooks/03_Modeling/04_Second_Checkpoint.ipynb",
+  "checkpoint_definition": "과목·학기별 25일 이후 첫 TMA/CMA 마감일(가중치 무관), 같은 날 마감 평가는 모두 대상",
+  "enrolled_definition": "date_unregistration 없음 또는 checkpoint_day 초과 (평가용으로만 사용)",
+  "missed_definition": "체크포인트일까지 해당 평가를 모두 제출하지 않음, 이월(is_banked=1)은 제출로 간주",
+  "activity_decline_definition": "(25, C] 일평균 클릭 / [0, 25] 일평균 클릭 <= 0.5 (25일까지 클릭 0이면 이후 클릭 0)",
+  "promotion_principle": "25일 관찰·일반 등급 중 조건 집단의 개발 세트 이후 이탈률 >= 0.2 이면 주의로 승격",
+  "candidate_group_rates_dev": {
+    "관찰 × 평가 미제출": {
+      "행 수": 1377,
+      "이후 이탈률": 0.21060275962236746,
+      "승격 원칙(≥20%)": "충족"
+    },
+    "일반 × 평가 미제출": {
+      "행 수": 1272,
+      "이후 이탈률": 0.139937106918239,
+      "승격 원칙(≥20%)": "미충족"
+    },
+    "관찰 × 제출 + 활동 감소": {
+      "행 수": 817,
+      "이후 이탈률": 0.11015911872705018,
+      "승격 원칙(≥20%)": "미충족"
+    },
+    "일반 × 제출 + 활동 감소": {
+      "행 수": 1670,
+      "이후 이탈률": 0.07544910179640718,
+      "승격 원칙(≥20%)": "미충족"
+    },
+    "관찰·일반 × 제출 + 활동 유지": {
+      "행 수": 7037,
+      "이후 이탈률": 0.07886883615176922,
+      "승격 원칙(≥20%)": "미충족"
+    }
+  },
+  "chosen_rule": "R1 관찰×미제출",
+  "checkpoints": [
+    {
+      "code_module": "AAA",
+      "code_presentation": "2013J",
+      "checkpoint_day": 54.0,
+      "checkpoint_type": "TMA",
+      "checkpoint_weight": 20.0,
+      "same_day_n": 1
+    },
+    {
+      "code_module": "AAA",
+      "code_presentation": "2014J",
+      "checkpoint_day": 54.0,
+      "checkpoint_type": "TMA",
+      "checkpoint_weight": 20.0,
+      "same_day_n": 1
+    },
+    {
+      "code_module": "BBB",
+      "code_presentation": "2013B",
+      "checkpoint_day": 47.0,
+      "checkpoint_type": "TMA",
+      "checkpoint_weight": 18.0,
+      "same_day_n": 1
+    },
+    {
+      "code_module": "BBB",
+      "code_presentation": "2013J",
+      "checkpoint_day": 47.0,
+      "checkpoint_type": "TMA",
+      "checkpoint_weight": 18.0,
+      "same_day_n": 1
+    },
+    {
+      "code_module": "BBB",
+      "code_presentation": "2014B",
+      "checkpoint_day": 40.0,
+      "checkpoint_type": "TMA",
+      "checkpoint_weight": 18.0,
+      "same_day_n": 1
+    },
+    {
+      "code_module": "BBB",
+      "code_presentation": "2014J",
+      "checkpoint_day": 54.0,
+      "checkpoint_type": "TMA",
+      "checkpoint_weight": 10.0,
+      "same_day_n": 1
+    },
+    {
+      "code_module": "CCC",
+      "code_presentation": "2014B",
+      "checkpoint_day": 32.0,
+      "checkpoint_type": "TMA",
+      "checkpoint_weight": 9.0,
+      "same_day_n": 1
+    },
+    {
+      "code_module": "CCC",
+      "code_presentation": "2014J",
+      "checkpoint_day": 32.0,
+      "checkpoint_type": "TMA",
+      "checkpoint_weight": 9.0,
+      "same_day_n": 1
+    },
+    {
+      "code_module": "DDD",
+      "code_presentation": "2013B",
+      "checkpoint_day": 51.0,
+      "checkpoint_type": "CMA",
+      "checkpoint_weight": 3.0,
+      "same_day_n": 1
+    },
+    {
+      "code_module": "DDD",
+      "code_presentation": "2013J",
+      "checkpoint_day": 53.0,
+      "checkpoint_type": "TMA",
+      "checkpoint_weight": 12.5,
+      "same_day_n": 1
+    },
+    {
+      "code_module": "DDD",
+      "code_presentation": "2014B",
+      "checkpoint_day": 53.0,
+      "checkpoint_type": "TMA",
+      "checkpoint_weight": 12.5,
+      "same_day_n": 1
+    },
+    {
+      "code_module": "DDD",
+      "code_presentation": "2014J",
+      "checkpoint_day": 41.0,
+      "checkpoint_type": "TMA",
+      "checkpoint_weight": 10.0,
+      "same_day_n": 1
+    },
+    {
+      "code_module": "EEE",
+      "code_presentation": "2013J",
+      "checkpoint_day": 33.0,
+      "checkpoint_type": "TMA",
+      "checkpoint_weight": 16.0,
+      "same_day_n": 1
+    },
+    {
+      "code_module": "EEE",
+      "code_presentation": "2014B",
+      "checkpoint_day": 33.0,
+      "checkpoint_type": "TMA",
+      "checkpoint_weight": 16.0,
+      "same_day_n": 1
+    },
+    {
+      "code_module": "EEE",
+      "code_presentation": "2014J",
+      "checkpoint_day": 33.0,
+      "checkpoint_type": "TMA",
+      "checkpoint_weight": 16.0,
+      "same_day_n": 1
+    },
+    {
+      "code_module": "FFF",
+      "code_presentation": "2013B",
+      "checkpoint_day": 47.0,
+      "checkpoint_type": "TMA",
+      "checkpoint_weight": 12.5,
+      "same_day_n": 1
+    },
+    {
+      "code_module": "FFF",
+      "code_presentation": "2013J",
+      "checkpoint_day": 47.0,
+      "checkpoint_type": "TMA",
+      "checkpoint_weight": 12.5,
+      "same_day_n": 1
+    },
+    {
+      "code_module": "FFF",
+      "code_presentation": "2014B",
+      "checkpoint_day": 52.0,
+      "checkpoint_type": "TMA",
+      "checkpoint_weight": 12.5,
+      "same_day_n": 1
+    },
+    {
+      "code_module": "FFF",
+      "code_presentation": "2014J",
+      "checkpoint_day": 52.0,
+      "checkpoint_type": "TMA",
+      "checkpoint_weight": 12.5,
+      "same_day_n": 1
+    },
+    {
+      "code_module": "GGG",
+      "code_presentation": "2013J",
+      "checkpoint_day": 61.0,
+      "checkpoint_type": "TMA",
+      "checkpoint_weight": 0.0,
+      "same_day_n": 1
+    },
+    {
+      "code_module": "GGG",
+      "code_presentation": "2014B",
+      "checkpoint_day": 61.0,
+      "checkpoint_type": "TMA",
+      "checkpoint_weight": 0.0,
+      "same_day_n": 1
+    },
+    {
+      "code_module": "GGG",
+      "code_presentation": "2014J",
+      "checkpoint_day": 61.0,
+      "checkpoint_type": "TMA",
+      "checkpoint_weight": 0.0,
+      "same_day_n": 1
+    }
+  ],
+  "dev": {
+    "관리자 명단(25일)": 0.3349546044098573,
+    "관리자 명단 추가": 0.07441634241245136,
+    "관리자 명단 합계": 0.4093709468223087,
+    "승격 인원": 1377,
+    "승격 집단 이탈률": 0.21060275962236746,
+    "체크포인트 이후 이탈자 포착(25일 명단)": 0.5706860706860707,
+    "체크포인트 이후 이탈자 포착(1차+2차)": 0.6711711711711712,
+    "전체 이탈자 포착(25일 명단)": 0.6108905275099262,
+    "전체 이탈자 포착(1차+2차)": 0.6931366988088485
+  },
+  "holdout": {
+    "관리자 명단(25일)": 0.34207650273224044,
+    "관리자 명단 추가": 0.05431693989071038,
+    "관리자 명단 합계": 0.39639344262295084,
+    "승격 인원": 497,
+    "승격 집단 이탈률": 0.2655935613682093,
+    "체크포인트 이후 이탈자 포착(25일 명단)": 0.543579507651364,
+    "체크포인트 이후 이탈자 포착(1차+2차)": 0.6314038589487692,
+    "전체 이탈자 포착(25일 명단)": 0.561046511627907,
+    "전체 이탈자 포착(1차+2차)": 0.6377906976744186
+  }
+}
