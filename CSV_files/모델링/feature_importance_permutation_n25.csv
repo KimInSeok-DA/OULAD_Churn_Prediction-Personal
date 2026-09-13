@@ -1,0 +1,259 @@
+﻿model,kind,unit,scope,module,mean,std
+Logistic,feature,active_days_25,global,ALL,0.0021499347409182313,0.002541698985219886
+Logistic,feature,age_band,global,ALL,0.0005165130785489591,0.0014302015018313103
+Logistic,feature,avg_score_25,global,ALL,0.17485158643054294,0.01682036401177406
+Logistic,feature,avg_score_25,value_only,ALL,0.06821411284011203,0.010311861043173703
+Logistic,feature,avg_submit_delay_25,global,ALL,0.08552821137189606,0.01867842799508212
+Logistic,feature,avg_submit_delay_25,value_only,ALL,0.0032540762108416764,0.0012969655319602957
+Logistic,feature,code_module,global,ALL,0.09982642077065644,0.01114822165807715
+Logistic,feature,date_registration,global,ALL,0.0020080140543260747,0.0015019612414404345
+Logistic,feature,disability,global,ALL,0.009031698594212146,0.003573233002712229
+Logistic,feature,distinct_resources_25,global,ALL,-0.0002798029219594089,0.000941200291456563
+Logistic,feature,gender,global,ALL,0.004587738036558339,0.0013036104538234417
+Logistic,feature,highest_education,global,ALL,0.006409262892432136,0.004282050559273383
+Logistic,feature,imd_band,global,ALL,0.0009016281920124936,0.0016205819139234628
+Logistic,feature,n_banked_25,global,ALL,0.0022246083620871882,0.0015627266653381114
+Logistic,feature,n_opportunity_25,global,ALL,0.003469764132551343,0.0021813945169450754
+Logistic,feature,n_submitted_25,global,ALL,0.028298330330508947,0.007369762371134026
+Logistic,feature,no_vle_activity_25,global,ALL,-0.00020412975468864667,0.00023257323942864542
+Logistic,feature,num_of_prev_attempts,global,ALL,0.0034502075064888316,0.0011412454292775058
+Logistic,feature,presentation_period,global,ALL,0.00217523406136505,0.0016167508662037258
+Logistic,feature,region,global,ALL,0.0002747541606232606,0.002008326987217085
+Logistic,feature,studied_credits,global,ALL,0.014332733938752146,0.003937210847482154
+Logistic,feature,total_click_25,global,ALL,3.276244978076105e-05,0.00037201610543803083
+Logistic,group,VLE 활동량,global,ALL,0.003719018532651297,0.0036346636091517046
+Logistic,group,VLE 활동량,within_module,AAA,-0.0057111499990834345,0.01013110759994527
+Logistic,group,VLE 활동량,within_module,ALL,0.0028318701500729218,0.0025722608728839377
+Logistic,group,VLE 활동량,within_module,BBB,0.006736882241023601,0.012046917706275232
+Logistic,group,VLE 활동량,within_module,CCC,-0.0037564520478179666,0.004353888794166066
+Logistic,group,VLE 활동량,within_module,DDD,0.0015505185524629763,0.004462203599248578
+Logistic,group,VLE 활동량,within_module,EEE,0.0322982619622005,0.01774811145044207
+Logistic,group,VLE 활동량,within_module,FFF,0.004129876403368149,0.004271259843732086
+Logistic,group,VLE 활동량,within_module,GGG,0.01424337330787916,0.022395931247757416
+Logistic,group,과목·개강 시기,global,ALL,0.10503229032326603,0.014686359044174362
+Logistic,group,과목·개강 시기,within_module,AAA,0.0,0.0
+Logistic,group,과목·개강 시기,within_module,ALL,0.0019787252873864135,0.0015532982208208283
+Logistic,group,과목·개강 시기,within_module,BBB,0.004290316490229642,0.0021434463644270977
+Logistic,group,과목·개강 시기,within_module,CCC,0.0,0.0
+Logistic,group,과목·개강 시기,within_module,DDD,0.003970933889955215,0.008262094530211268
+Logistic,group,과목·개강 시기,within_module,EEE,0.007362893133081645,0.006688111215171571
+Logistic,group,과목·개강 시기,within_module,FFF,0.001247688160710214,0.0024065813637522476
+Logistic,group,과목·개강 시기,within_module,GGG,0.008859900425622754,0.013483542090502006
+Logistic,group,수강 부담·등록,global,ALL,0.015587372766352076,0.0013548752577588524
+Logistic,group,수강 부담·등록,within_module,AAA,0.03824352224926344,0.08736275045499665
+Logistic,group,수강 부담·등록,within_module,ALL,0.015318260329722642,0.0015814345655421561
+Logistic,group,수강 부담·등록,within_module,BBB,0.00682837630975304,0.009895802128208297
+Logistic,group,수강 부담·등록,within_module,CCC,0.016363413517395887,0.015873527857041735
+Logistic,group,수강 부담·등록,within_module,DDD,0.020032137796251303,0.018664839475587988
+Logistic,group,수강 부담·등록,within_module,EEE,0.017053539265960604,0.021279639702789014
+Logistic,group,수강 부담·등록,within_module,FFF,0.016554922568496565,0.012432915739408613
+Logistic,group,수강 부담·등록,within_module,GGG,0.015729472737010895,0.03900443223129179
+Logistic,group,인구통계·사회경제,global,ALL,0.02333120868673959,0.006807350244798507
+Logistic,group,인구통계·사회경제,within_module,AAA,-0.024116975851595664,0.052730385033962074
+Logistic,group,인구통계·사회경제,within_module,ALL,0.019418676549959497,0.004472638275626932
+Logistic,group,인구통계·사회경제,within_module,BBB,0.028460409151757415,0.017737067609814725
+Logistic,group,인구통계·사회경제,within_module,CCC,0.004317845279864525,0.018107777589542958
+Logistic,group,인구통계·사회경제,within_module,DDD,0.029567554164438226,0.014033690582728431
+Logistic,group,인구통계·사회경제,within_module,EEE,0.006518718302685053,0.021834212964646018
+Logistic,group,인구통계·사회경제,within_module,FFF,0.02129430912043743,0.014598354476943944
+Logistic,group,인구통계·사회경제,within_module,GGG,0.02103845950249216,0.05021898005281858
+Logistic,group,재수강 이력,global,ALL,0.007199604431429177,0.003079806076746358
+Logistic,group,재수강 이력,within_module,AAA,0.0,0.0
+Logistic,group,재수강 이력,within_module,ALL,0.006787461145375364,0.003431676539465211
+Logistic,group,재수강 이력,within_module,BBB,0.006619356766357866,0.005834385381481562
+Logistic,group,재수강 이력,within_module,CCC,0.0,0.0
+Logistic,group,재수강 이력,within_module,DDD,0.012497632859741165,0.006061312107273114
+Logistic,group,재수강 이력,within_module,EEE,0.0037504673544350663,0.003960015178929122
+Logistic,group,재수강 이력,within_module,FFF,0.008213957957914266,0.010237793817391568
+Logistic,group,재수강 이력,within_module,GGG,-3.121194330742484e-05,0.00104949672346237
+Logistic,group,평가 점수·제출 시점,global,ALL,0.09415369380722034,0.017335292428555634
+Logistic,group,평가 점수·제출 시점,value_only,ALL,0.07581434936334594,0.010856297004395884
+Logistic,group,평가 점수·제출 시점,within_module,AAA,0.027714413185712616,0.05565239834588525
+Logistic,group,평가 점수·제출 시점,within_module,ALL,0.08476031955242576,0.011120896264676385
+Logistic,group,평가 점수·제출 시점,within_module,BBB,0.04857612463816037,0.022459200170531535
+Logistic,group,평가 점수·제출 시점,within_module,CCC,0.1452376568840404,0.023506315223567182
+Logistic,group,평가 점수·제출 시점,within_module,DDD,0.09571773436706385,0.023552333385418404
+Logistic,group,평가 점수·제출 시점,within_module,EEE,0.0,0.0
+Logistic,group,평가 점수·제출 시점,within_module,FFF,0.0749981130562356,0.014014163010613007
+Logistic,group,평가 점수·제출 시점,within_module,GGG,0.0,0.0
+Logistic,group,평가 제출,global,ALL,0.022997549669984792,0.008230191727265482
+Logistic,group,평가 제출,within_module,AAA,0.0317188074402729,0.08713552059214243
+Logistic,group,평가 제출,within_module,ALL,0.023733050555572538,0.008396500152733362
+Logistic,group,평가 제출,within_module,BBB,0.04144026136547478,0.011097240412410555
+Logistic,group,평가 제출,within_module,CCC,0.01120111135186467,0.021149917449280308
+Logistic,group,평가 제출,within_module,DDD,0.03689918889092246,0.01665167877474491
+Logistic,group,평가 제출,within_module,EEE,0.0,0.0
+Logistic,group,평가 제출,within_module,FFF,0.016555748319792788,0.00489677633650388
+Logistic,group,평가 제출,within_module,GGG,0.0,0.0
+RandomForest,feature,active_days_25,global,ALL,0.0020764071502890813,0.002284387175347825
+RandomForest,feature,age_band,global,ALL,0.00026700284175826375,0.0005017192728114135
+RandomForest,feature,avg_score_25,global,ALL,0.12042350217796831,0.012129654124372804
+RandomForest,feature,avg_score_25,value_only,ALL,0.08306036674264411,0.010250253253757221
+RandomForest,feature,avg_submit_delay_25,global,ALL,0.012929779647824066,0.0038295488880369937
+RandomForest,feature,avg_submit_delay_25,value_only,ALL,0.005673157262447331,0.0073709081668054625
+RandomForest,feature,code_module,global,ALL,0.043888311547737126,0.009474648802877536
+RandomForest,feature,date_registration,global,ALL,0.005512747154674713,0.0036972731470255936
+RandomForest,feature,disability,global,ALL,0.005278727093846243,0.0018389097324616013
+RandomForest,feature,distinct_resources_25,global,ALL,0.002293292489443017,0.00267094490368576
+RandomForest,feature,gender,global,ALL,0.002560633611958141,0.0014433818220524243
+RandomForest,feature,highest_education,global,ALL,0.004158670041737163,0.0015335063068823735
+RandomForest,feature,imd_band,global,ALL,-0.0001190831735236908,0.0005705991248708586
+RandomForest,feature,n_banked_25,global,ALL,9.677007536419867e-05,0.0001376507472370034
+RandomForest,feature,n_opportunity_25,global,ALL,0.025503208898983987,0.003082882990719731
+RandomForest,feature,n_submitted_25,global,ALL,0.007044709391889623,0.006266794931072056
+RandomForest,feature,no_vle_activity_25,global,ALL,7.659798131789408e-05,0.00018475825039216383
+RandomForest,feature,num_of_prev_attempts,global,ALL,0.0023758727650264235,0.002344433905415854
+RandomForest,feature,presentation_period,global,ALL,0.006211960339950034,0.0034234519698587546
+RandomForest,feature,region,global,ALL,0.0011433383058848732,0.001682100510631389
+RandomForest,feature,studied_credits,global,ALL,0.013630943013752011,0.003471839261692218
+RandomForest,feature,total_click_25,global,ALL,0.006562200291378091,0.00361239290528454
+RandomForest,group,VLE 활동량,global,ALL,0.01664095502995815,0.005900790331586158
+RandomForest,group,VLE 활동량,within_module,AAA,-0.006260184381599481,0.04476979882103475
+RandomForest,group,VLE 활동량,within_module,ALL,0.014159146833440977,0.009160625722816632
+RandomForest,group,VLE 활동량,within_module,BBB,0.006794825859308443,0.010278582759623945
+RandomForest,group,VLE 활동량,within_module,CCC,0.008713649637954393,0.02067315047229622
+RandomForest,group,VLE 활동량,within_module,DDD,0.011587350922271361,0.017536059299125138
+RandomForest,group,VLE 활동량,within_module,EEE,0.11558799376509132,0.02321721611470015
+RandomForest,group,VLE 활동량,within_module,FFF,0.01785772992584333,0.01153959221595967
+RandomForest,group,VLE 활동량,within_module,GGG,0.021347855547886613,0.024055723766423905
+RandomForest,group,과목·개강 시기,global,ALL,0.05093762431801859,0.007841882394048361
+RandomForest,group,과목·개강 시기,within_module,AAA,0.0,0.0
+RandomForest,group,과목·개강 시기,within_module,ALL,0.0052935722289336445,0.002829690020902428
+RandomForest,group,과목·개강 시기,within_module,BBB,0.00855217637553608,0.010266871063713245
+RandomForest,group,과목·개강 시기,within_module,CCC,0.0,0.0
+RandomForest,group,과목·개강 시기,within_module,DDD,0.007606664426835945,0.006660015784975328
+RandomForest,group,과목·개강 시기,within_module,EEE,0.005094207819285728,0.006155981628345944
+RandomForest,group,과목·개강 시기,within_module,FFF,0.009291340389228738,0.007136494186249748
+RandomForest,group,과목·개강 시기,within_module,GGG,0.031047230193332748,0.038624554474198915
+RandomForest,group,수강 부담·등록,global,ALL,0.02029955708469275,0.0035576775669418203
+RandomForest,group,수강 부담·등록,within_module,AAA,0.007578556737731686,0.052274626653153244
+RandomForest,group,수강 부담·등록,within_module,ALL,0.018910338600989833,0.005858169172005432
+RandomForest,group,수강 부담·등록,within_module,BBB,0.018737718505127073,0.011318487857882519
+RandomForest,group,수강 부담·등록,within_module,CCC,0.029051654325437142,0.012565679787259584
+RandomForest,group,수강 부담·등록,within_module,DDD,0.02261697593962005,0.01757115984448888
+RandomForest,group,수강 부담·등록,within_module,EEE,0.034822223801768026,0.022195087633043464
+RandomForest,group,수강 부담·등록,within_module,FFF,0.01719784781604953,0.0103518754672442
+RandomForest,group,수강 부담·등록,within_module,GGG,-0.0008735705395707994,0.010024534087864563
+RandomForest,group,인구통계·사회경제,global,ALL,0.011739982859226703,0.0022730452863453862
+RandomForest,group,인구통계·사회경제,within_module,AAA,-0.006473387070382257,0.044847881691282745
+RandomForest,group,인구통계·사회경제,within_module,ALL,0.014004445918123548,0.002216327257054915
+RandomForest,group,인구통계·사회경제,within_module,BBB,0.016468479910188037,0.011262571305279164
+RandomForest,group,인구통계·사회경제,within_module,CCC,0.003885699942950866,0.012240395540401962
+RandomForest,group,인구통계·사회경제,within_module,DDD,0.01959545813794554,0.008392109879000983
+RandomForest,group,인구통계·사회경제,within_module,EEE,0.01206141228753687,0.008798788268168486
+RandomForest,group,인구통계·사회경제,within_module,FFF,0.022240434153261178,0.011806231821707402
+RandomForest,group,인구통계·사회경제,within_module,GGG,-0.0020113677395326582,0.009650157342701086
+RandomForest,group,재수강 이력,global,ALL,0.00203385070880203,0.002455061447899393
+RandomForest,group,재수강 이력,within_module,AAA,0.0,0.0
+RandomForest,group,재수강 이력,within_module,ALL,0.002850269775107728,0.00237111192216733
+RandomForest,group,재수강 이력,within_module,BBB,0.003939189512852799,0.0024632759256439664
+RandomForest,group,재수강 이력,within_module,CCC,0.0,0.0
+RandomForest,group,재수강 이력,within_module,DDD,0.003873171885072193,0.0035600838645339994
+RandomForest,group,재수강 이력,within_module,EEE,0.002559904866255508,0.0033463453480784356
+RandomForest,group,재수강 이력,within_module,FFF,0.010592163104499504,0.011670607776850193
+RandomForest,group,재수강 이력,within_module,GGG,-0.0002384641158293432,0.00041317850397279123
+RandomForest,group,평가 점수·제출 시점,global,ALL,0.14671217467342607,0.0110381816552882
+RandomForest,group,평가 점수·제출 시점,value_only,ALL,0.09705931993381028,0.011048267926093132
+RandomForest,group,평가 점수·제출 시점,within_module,AAA,0.11945856175532146,0.08883807569992663
+RandomForest,group,평가 점수·제출 시점,within_module,ALL,0.1447425149277224,0.014930133109158198
+RandomForest,group,평가 점수·제출 시점,within_module,BBB,0.11255353505198781,0.017202475987499726
+RandomForest,group,평가 점수·제출 시점,within_module,CCC,0.20195795102813968,0.03466217831817766
+RandomForest,group,평가 점수·제출 시점,within_module,DDD,0.19432673650110036,0.03771489954429469
+RandomForest,group,평가 점수·제출 시점,within_module,EEE,0.0,0.0
+RandomForest,group,평가 점수·제출 시점,within_module,FFF,0.12273453523836393,0.03766016241804214
+RandomForest,group,평가 점수·제출 시점,within_module,GGG,0.0,0.0
+RandomForest,group,평가 제출,global,ALL,0.02797334792616607,0.007431870646353526
+RandomForest,group,평가 제출,within_module,AAA,-0.0025458219077906315,0.03445592712445786
+RandomForest,group,평가 제출,within_module,ALL,0.007768987788313542,0.005306469773170808
+RandomForest,group,평가 제출,within_module,BBB,0.007274714930952627,0.005881188050000499
+RandomForest,group,평가 제출,within_module,CCC,0.0036699881883303863,0.017450279800074946
+RandomForest,group,평가 제출,within_module,DDD,0.016565088729245486,0.008945009084588725
+RandomForest,group,평가 제출,within_module,EEE,0.0,0.0
+RandomForest,group,평가 제출,within_module,FFF,0.009898293129460627,0.0032180265223136135
+RandomForest,group,평가 제출,within_module,GGG,0.0,0.0
+XGBoost,feature,active_days_25,global,ALL,0.0013195993340618028,0.00114325729456186
+XGBoost,feature,age_band,global,ALL,-2.239897794025226e-05,0.0003936483697277479
+XGBoost,feature,avg_score_25,global,ALL,0.12226771531683742,0.009547586099647573
+XGBoost,feature,avg_score_25,value_only,ALL,0.07835608603314052,0.010826270669949333
+XGBoost,feature,avg_submit_delay_25,global,ALL,0.009188891104296076,0.002786278626594241
+XGBoost,feature,avg_submit_delay_25,value_only,ALL,0.003936300500690009,0.005073721853969454
+XGBoost,feature,code_module,global,ALL,0.03524969397624812,0.005801773665024321
+XGBoost,feature,date_registration,global,ALL,0.003908002731477782,0.0015768842467054844
+XGBoost,feature,disability,global,ALL,0.007790086360448596,0.00369560720378936
+XGBoost,feature,distinct_resources_25,global,ALL,0.0005598780314605278,0.0016956317497514096
+XGBoost,feature,gender,global,ALL,0.0031142054661621524,0.0010813389721544618
+XGBoost,feature,highest_education,global,ALL,0.002838301651600983,0.0024800756227106187
+XGBoost,feature,imd_band,global,ALL,-0.00042116999253021036,0.00046138299307831276
+XGBoost,feature,n_banked_25,global,ALL,-2.6092246650173403e-05,5.3124160358808184e-05
+XGBoost,feature,n_opportunity_25,global,ALL,0.041501074900097364,0.005817448308980191
+XGBoost,feature,n_submitted_25,global,ALL,0.0007996985122185806,0.0008016264863937708
+XGBoost,feature,no_vle_activity_25,global,ALL,7.598509468964565e-08,1.6990783700280596e-07
+XGBoost,feature,num_of_prev_attempts,global,ALL,0.0005183445546433574,0.0015306321480553255
+XGBoost,feature,presentation_period,global,ALL,0.004576128412284348,0.0021487418421178525
+XGBoost,feature,region,global,ALL,0.00039027530848731787,0.0009295575812779109
+XGBoost,feature,studied_credits,global,ALL,0.015649255891345033,0.003009259923223357
+XGBoost,feature,total_click_25,global,ALL,0.0016245520366849563,0.0010825344878904752
+XGBoost,group,VLE 활동량,global,ALL,0.0070717211917302805,0.0032841154972073384
+XGBoost,group,VLE 활동량,within_module,AAA,-0.00464148236173228,0.015144629803705489
+XGBoost,group,VLE 활동량,within_module,ALL,0.006956833904067353,0.001068293680950323
+XGBoost,group,VLE 활동량,within_module,BBB,0.0003786039707328848,0.007340157438289357
+XGBoost,group,VLE 활동량,within_module,CCC,0.0010679877331287902,0.004816352983764091
+XGBoost,group,VLE 활동량,within_module,DDD,0.005004426962001243,0.0070503995113815774
+XGBoost,group,VLE 활동량,within_module,EEE,0.07235241440213322,0.031134209624999694
+XGBoost,group,VLE 활동량,within_module,FFF,0.007423105302819799,0.007349670353179673
+XGBoost,group,VLE 활동량,within_module,GGG,0.01923749220490901,0.020822365186120375
+XGBoost,group,과목·개강 시기,global,ALL,0.043687207852439174,0.008015657247376878
+XGBoost,group,과목·개강 시기,within_module,AAA,0.0,0.0
+XGBoost,group,과목·개강 시기,within_module,ALL,0.003590690913106118,0.0020512765685387077
+XGBoost,group,과목·개강 시기,within_module,BBB,0.008012751312555513,0.006083393968255941
+XGBoost,group,과목·개강 시기,within_module,CCC,0.0,0.0
+XGBoost,group,과목·개강 시기,within_module,DDD,0.004697360149141707,0.006405105700660407
+XGBoost,group,과목·개강 시기,within_module,EEE,-0.01174412535975618,0.018941061686920904
+XGBoost,group,과목·개강 시기,within_module,FFF,0.0042198007915795425,0.005744064708724366
+XGBoost,group,과목·개강 시기,within_module,GGG,0.03343335285788501,0.023705765500296686
+XGBoost,group,수강 부담·등록,global,ALL,0.020093111743939854,0.0032532975974462245
+XGBoost,group,수강 부담·등록,within_module,AAA,0.0185572279939752,0.06127168815577438
+XGBoost,group,수강 부담·등록,within_module,ALL,0.017936100293773266,0.00443881749369582
+XGBoost,group,수강 부담·등록,within_module,BBB,0.010596897960673975,0.012289359243484305
+XGBoost,group,수강 부담·등록,within_module,CCC,0.02242327732233283,0.005253289164911895
+XGBoost,group,수강 부담·등록,within_module,DDD,0.027207087432473798,0.01734521856125819
+XGBoost,group,수강 부담·등록,within_module,EEE,0.02156166597659657,0.03762299015082295
+XGBoost,group,수강 부담·등록,within_module,FFF,0.016999454807487175,0.007083731324238952
+XGBoost,group,수강 부담·등록,within_module,GGG,0.010028604712135274,0.019089914475178077
+XGBoost,group,인구통계·사회경제,global,ALL,0.015266627891640464,0.004631390674721844
+XGBoost,group,인구통계·사회경제,within_module,AAA,-0.005425870418039463,0.027092282173579594
+XGBoost,group,인구통계·사회경제,within_module,ALL,0.013894656460255932,0.005460000520948009
+XGBoost,group,인구통계·사회경제,within_module,BBB,0.014605150683183918,0.016001604917547835
+XGBoost,group,인구통계·사회경제,within_module,CCC,-0.002306103984103076,0.022726476713451446
+XGBoost,group,인구통계·사회경제,within_module,DDD,0.02598332545093378,0.01033776116198962
+XGBoost,group,인구통계·사회경제,within_module,EEE,-0.003613312309424195,0.01921835540166828
+XGBoost,group,인구통계·사회경제,within_module,FFF,0.023488864023646822,0.017241776443930722
+XGBoost,group,인구통계·사회경제,within_module,GGG,0.00992130036582553,0.036095533460866976
+XGBoost,group,재수강 이력,global,ALL,0.0007564703184156473,0.0013225352006306357
+XGBoost,group,재수강 이력,within_module,AAA,0.0,0.0
+XGBoost,group,재수강 이력,within_module,ALL,0.001098070594575593,0.0013714587259472811
+XGBoost,group,재수강 이력,within_module,BBB,0.0030756826899027544,0.00409834374883255
+XGBoost,group,재수강 이력,within_module,CCC,0.0,0.0
+XGBoost,group,재수강 이력,within_module,DDD,0.0011435784121106574,0.0025424833001947084
+XGBoost,group,재수강 이력,within_module,EEE,0.004204416629734887,0.004653690666192888
+XGBoost,group,재수강 이력,within_module,FFF,0.005657758955650893,0.005863460554171356
+XGBoost,group,재수강 이력,within_module,GGG,-0.0004112686003324256,0.001687471905358029
+XGBoost,group,평가 점수·제출 시점,global,ALL,0.15518401534536422,0.01401821614129999
+XGBoost,group,평가 점수·제출 시점,value_only,ALL,0.09839492537001307,0.01390265904725785
+XGBoost,group,평가 점수·제출 시점,within_module,AAA,0.10861717942291964,0.12967599434903135
+XGBoost,group,평가 점수·제출 시점,within_module,ALL,0.14477479453539158,0.011332033043156215
+XGBoost,group,평가 점수·제출 시점,within_module,BBB,0.11674810491310975,0.02658159723339088
+XGBoost,group,평가 점수·제출 시점,within_module,CCC,0.19022706174267462,0.033202056504256526
+XGBoost,group,평가 점수·제출 시점,within_module,DDD,0.18666927905780378,0.03644078356356126
+XGBoost,group,평가 점수·제출 시점,within_module,EEE,0.0,0.0
+XGBoost,group,평가 점수·제출 시점,within_module,FFF,0.12696482085147895,0.02621590824734976
+XGBoost,group,평가 점수·제출 시점,within_module,GGG,0.0,0.0
+XGBoost,group,평가 제출,global,ALL,0.037412580804578016,0.003923196863107987
+XGBoost,group,평가 제출,within_module,AAA,0.007672755651993228,0.011214763524671195
+XGBoost,group,평가 제출,within_module,ALL,0.006835682104114142,0.003508669238681955
+XGBoost,group,평가 제출,within_module,BBB,0.007851463585959607,0.006333005372713973
+XGBoost,group,평가 제출,within_module,CCC,-8.940455512150836e-05,0.002148942288151693
+XGBoost,group,평가 제출,within_module,DDD,0.014792857424149694,0.00446581409685331
+XGBoost,group,평가 제출,within_module,EEE,0.0,0.0
+XGBoost,group,평가 제출,within_module,FFF,0.0053481189689798285,0.00580620791943684
+XGBoost,group,평가 제출,within_module,GGG,0.0,0.0
