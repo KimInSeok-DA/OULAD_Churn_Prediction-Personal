@@ -1,0 +1,72 @@
+{
+  "created_from": "Notebooks/03_Modeling/01_Baseline_Models.ipynb",
+  "feature_spec": "CSV_files/통합 버전/feature_spec_n25.json",
+  "features_in_order": [
+    "num_of_prev_attempts",
+    "studied_credits",
+    "date_registration",
+    "total_click_25",
+    "active_days_25",
+    "distinct_resources_25",
+    "no_vle_activity_25",
+    "n_opportunity_25",
+    "n_submitted_25",
+    "avg_score_25",
+    "avg_submit_delay_25",
+    "gender",
+    "region",
+    "highest_education",
+    "imd_band",
+    "age_band",
+    "disability",
+    "code_module",
+    "presentation_period"
+  ],
+  "champion": "RandomForest",
+  "best_params": {
+    "model__max_depth": null,
+    "model__max_features": 0.5,
+    "model__min_samples_leaf": 30
+  },
+  "cv": {
+    "splitter": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+    "groups": "id_student",
+    "dev_terms": [
+      "2013B",
+      "2013J",
+      "2014B"
+    ],
+    "n_dev": 18504,
+    "pr_auc_mean": 0.4052771311880924,
+    "pr_auc_std": 0.013428834409346299
+  },
+  "threshold": {
+    "rule": "F1 최대",
+    "value": 0.5249742026679296,
+    "chosen_on": "dev OOF"
+  },
+  "holdout": {
+    "term": "2014J",
+    "n": 9150,
+    "pr_auc": 0.3722410652286642,
+    "roc_auc": 0.6849498028107297,
+    "prevalence": 0.18797814207650274,
+    "threshold": 0.5249742026679296,
+    "precision": 0.35593934288121315,
+    "recall": 0.49127906976744184,
+    "f1": 0.41279921836834393,
+    "f2": 0.4565593256969959,
+    "flag_rate": 0.2594535519125683,
+    "tp": 845,
+    "fp": 1529,
+    "fn": 875,
+    "tn": 5901
+  },
+  "scale_pos_weight": 4.247872943845717,
+  "environment": {
+    "python": "3.14.5",
+    "pandas": "3.0.3",
+    "scikit-learn": "1.9.0",
+    "xgboost": "3.3.0"
+  }
+}
