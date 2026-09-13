@@ -1,0 +1,97 @@
+{
+  "created_from": "Notebooks/03_Modeling/03_Final_Model_Tiers.ipynb",
+  "model": "XGBoost",
+  "params": {
+    "model__learning_rate": 0.01,
+    "model__max_depth": 5,
+    "model__min_child_weight": 30
+  },
+  "features_in_order": [
+    "num_of_prev_attempts",
+    "studied_credits",
+    "date_registration",
+    "total_click_25",
+    "active_days_25",
+    "distinct_resources_25",
+    "no_vle_activity_25",
+    "n_opportunity_25",
+    "n_submitted_25",
+    "avg_score_25",
+    "avg_submit_delay_25",
+    "n_banked_25",
+    "gender",
+    "region",
+    "highest_education",
+    "imd_band",
+    "age_band",
+    "disability",
+    "code_module",
+    "presentation_period"
+  ],
+  "calibration": {
+    "method": "sigmoid (logistic on logit of raw probability), fit on dev OOF",
+    "coef": 1.0921358655248783,
+    "intercept": -1.3911472944974022
+  },
+  "tier_rule": {
+    "high": 0.4,
+    "mid": 0.2,
+    "low": 0.13,
+    "module_top": 0.3
+  },
+  "capacity_adjustment": {
+    "when": "관리 인력 부족",
+    "mid": 0.25
+  },
+  "audience": "관리자(튜터·학사 담당). 학생에게 등급을 통보하지 않음",
+  "dev_oof": {
+    "1 고위험 비율": 0.11078685689580631,
+    "1 고위험 이탈률": 0.4814634146341463,
+    "2 주의 비율": 0.22416774751405102,
+    "2 주의 이탈률": 0.2813404050144648,
+    "3 관찰 비율": 0.2535127539991353,
+    "3 관찰 이탈률": 0.1481560434875293,
+    "4 일반 비율": 0.41153264159100733,
+    "4 일반 이탈률": 0.08890347997373604,
+    "관리자 명단(1+2)": 0.3349546044098573,
+    "Recall 1": 0.27992058990357344,
+    "Recall 1+2": 0.6108905275099262,
+    "Recall 1~3": 0.8079977311401021,
+    "Precision 1": 0.4814634146341463,
+    "Precision 1+2": 0.3475314617618587,
+    "GGG Recall 1~3": 0.3627450980392157,
+    "과목 최소 Recall 1~3": 0.3627450980392157
+  },
+  "holdout": {
+    "term": "2014J",
+    "n": 9150,
+    "PR-AUC": 0.3571521073369106,
+    "ROC-AUC": 0.6793946211149018,
+    "Brier": 0.1421038872551414,
+    "평균 예측": 0.17990764514330726,
+    "실제 이탈률": 0.18797814207650274,
+    "PR-AUC / 이탈률": 1.8999661524027511,
+    "1 고위험 비율": 0.06655737704918033,
+    "1 고위험 이탈률": 0.4696223316912972,
+    "2 주의 비율": 0.2755191256830601,
+    "2 주의 이탈률": 0.2693375644585482,
+    "3 관찰 비율": 0.21278688524590164,
+    "3 관찰 이탈률": 0.17719568567026195,
+    "4 일반 비율": 0.44513661202185795,
+    "4 일반 이탈률": 0.10066290203780996,
+    "관리자 명단(1+2)": 0.34207650273224044,
+    "Recall 1": 0.16627906976744186,
+    "Recall 1+2": 0.561046511627907,
+    "Recall 1~3": 0.7616279069767442,
+    "Precision 1": 0.4696223316912972,
+    "Precision 1+2": 0.3083067092651757,
+    "GGG Recall 1~3": 0.45652173913043476,
+    "과목 최소 Recall 1~3": 0.45652173913043476
+  },
+  "environment": {
+    "python": "3.14.5",
+    "pandas": "3.0.3",
+    "scikit-learn": "1.9.0",
+    "xgboost": "3.3.0"
+  }
+}
