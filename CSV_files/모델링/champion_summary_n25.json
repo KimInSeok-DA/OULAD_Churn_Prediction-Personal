@@ -1,6 +1,16 @@
 {
   "created_from": "Notebooks/03_Modeling/01_Baseline_Models.ipynb",
   "feature_spec": "CSV_files/통합 버전/feature_spec_n25.json",
+  "definition_version": "0913_01 — 평가 기회 weight 조건 없음, 이월 평가는 학생별 기회에서 제외(n_banked_25)",
+  "relative_features": {
+    "candidates": [
+      "total_click_25_pct",
+      "active_days_25_pct",
+      "distinct_resources_25_pct"
+    ],
+    "adopted": false,
+    "rule": "mean delta over Logistic/RF/XGB > 0 on both CV_SPLITS and TERM_SPLITS"
+  },
   "features_in_order": [
     "num_of_prev_attempts",
     "studied_credits",
@@ -13,6 +23,7 @@
     "n_submitted_25",
     "avg_score_25",
     "avg_submit_delay_25",
+    "n_banked_25",
     "gender",
     "region",
     "highest_education",
@@ -24,9 +35,20 @@
   ],
   "champion": "RandomForest",
   "best_params": {
-    "model__max_depth": null,
-    "model__max_features": 0.5,
-    "model__min_samples_leaf": 30
+    "Dummy": {},
+    "Logistic": {
+      "model__C": 100.0
+    },
+    "RandomForest": {
+      "model__max_depth": 12,
+      "model__max_features": 0.5,
+      "model__min_samples_leaf": 30
+    },
+    "XGBoost": {
+      "model__learning_rate": 0.01,
+      "model__max_depth": 5,
+      "model__min_child_weight": 30
+    }
   },
   "cv": {
     "splitter": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
@@ -37,30 +59,58 @@
       "2014B"
     ],
     "n_dev": 18504,
-    "pr_auc_mean": 0.4052771311880924,
-    "pr_auc_std": 0.013428834409346299
+    "pr_auc_mean": {
+      "Logistic": 0.40036460604632784,
+      "RandomForest": 0.4061339060896086,
+      "XGBoost": 0.4055479633789312
+    },
+    "term_split_pr_auc_mean": {
+      "Logistic": 0.318113899914113,
+      "RandomForest": 0.3429988687634636,
+      "XGBoost": 0.3604183138125926
+    },
+    "term_split_folds": [
+      "2013B",
+      "2014B"
+    ]
   },
-  "threshold": {
-    "rule": "F1 최대",
-    "value": 0.5249742026679296,
-    "chosen_on": "dev OOF"
+  "calibration": {
+    "method": "sigmoid on dev OOF (cross-fitted for evaluation; rule: lower Brier, sigmoid if diff < 0.001)",
+    "dev_brier_raw": 0.20062793783667368,
+    "dev_brier_calibrated": 0.1363837202846332
+  },
+  "threshold_candidates": {
+    "전역 F1 최대": 0.22615464908692096,
+    "전역 F2 최대": 0.11368971087663929,
+    "전역 Recall≥0.70 중 Precision 최대": 0.16404554314163777,
+    "전역 상위 20%": 0.2879625667655552,
+    "전역 상위 30%": 0.2171865699070169,
+    "module_topk_rate": 0.2844790315607436
+  },
+  "threshold_provisional": {
+    "rule": "전역 F1 최대",
+    "value": 0.22615464908692096,
+    "chosen_on": "calibrated dev OOF"
   },
   "holdout": {
     "term": "2014J",
     "n": 9150,
-    "pr_auc": 0.3722410652286642,
-    "roc_auc": 0.6849498028107297,
+    "pr_auc": 0.3649380830502884,
+    "roc_auc": 0.6807647344204827,
+    "brier": 0.1408590065467147,
     "prevalence": 0.18797814207650274,
-    "threshold": 0.5249742026679296,
-    "precision": 0.35593934288121315,
-    "recall": 0.49127906976744184,
-    "f1": 0.41279921836834393,
-    "f2": 0.4565593256969959,
-    "flag_rate": 0.2594535519125683,
-    "tp": 845,
-    "fp": 1529,
-    "fn": 875,
-    "tn": 5901
+    "global_f1": {
+      "precision": 0.314963376351587,
+      "recall": 0.525,
+      "f1": 0.39372138652714195,
+      "flag_rate": 0.31333333333333335
+    },
+    "module_topk": {
+      "precision": 0.3189688341669873,
+      "recall": 0.4819767441860465,
+      "f1": 0.3838851586015281,
+      "flag_rate": 0.28404371584699456
+    }
   },
   "scale_pos_weight": 4.247872943845717,
   "environment": {
