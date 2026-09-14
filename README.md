@@ -24,6 +24,7 @@ OULAD(Open University Learning Analytics Dataset)로 **개강 후 25일 시점 �
 | 체계 성과 (holdout) | 관리자 명단 39.6%가 이탈자 63.8%를 포착, 고위험 실제 이탈률 47.0% |
 | 개입 지원 | 학생별 위험 사유 상위 2개 제공(명단의 91%가 개입 가능한 사유 보유) |
 | 공정성 | 집단별 확률 보정 차이 ≤ 3.3%p. 인구통계 사유는 지원 연계에만 사용 |
+| 과목 설계 제안 | 첫 평가 성적 가중치·초기 참여 설계는 조기 탐지에 유리(근거 강·중), 평가 과밀은 완주자 합격률과 음의 관계. 설계만으로 이탈 감소 근거는 약함 |
 
 위험 등급은 **학생에게 통보하지 않고 관리자에게만** 전달한다. 학생에게는 위험도와 무관한 마감 리마인더를 전원 발송한다.
 
@@ -43,6 +44,7 @@ OULAD(Open University Learning Analytics Dataset)로 **개강 후 25일 시점 �
 | 2차 체크포인트 | `03_Modeling/04_Second_Checkpoint` | 과목별 첫 평가 마감일 승격 규칙 |
 | 개입 가이드 | `03_Modeling/05_Intervention_Guide` | 위험 사유 코드, 관리자 업무량, 공정성 점검 |
 | 민감도 분석 | `03_Modeling/06_Sensitivity_Ambiguous` | 취소일 없는 Withdrawn 93명 포함 시 결론 변화 |
+| 과목 설계 제안 | `03_Modeling/07_Course_Design_Indicators` | 과목×학기 설계 지표와 이탈·성취·조기 탐지·운영의 관계, 목적별 설계 제안 |
 
 노트북은 위 순서대로 실행한다. 각 노트북은 앞 단계의 `CSV_files` 산출물을 읽는다.
 
@@ -51,7 +53,7 @@ OULAD(Open University Learning Analytics Dataset)로 **개강 후 25일 시점 �
 - `Notebooks/`: 위 분석 흐름의 노트북
 - `CSV_files/`: OULAD 원본 CSV
   - `통합 버전/`: 25일 코호트 정본(`landmark25_all_cohorts.csv`), 정제 모델 테이블, 피처 명세
-  - `모델링/`: 모델 비교·중요도·등급·2차 규칙·사유 코드·공정성·민감도 산출물
+  - `모델링/`: 모델 비교·중요도·등급·2차 규칙·사유 코드·공정성·민감도·과목 설계 산출물
 - `docs/`: 최종 분석 보고서, 데이터 사전, 기획서
 - `reference_materials/personal_prework`: 스터디 지원용 개인 선행 분석(참고용, 최종 결과 아님)
 
