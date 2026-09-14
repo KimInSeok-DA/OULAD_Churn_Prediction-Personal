@@ -1,5 +1,8 @@
 # Current Status
 
+> **2026-09-14 안내 — 과거 시점 기록**: 이 문서는 2026-09-12 무렵(결측·이상치 처리 전) 상태를 기록한 것이다. 이후 모델링·조기 경고 체계·과목 설계 제안까지 완료됐다. **최종 결과는 루트 `README.md`, 최종 결론은 `docs/최종_분석_보고서.md`를 본다.**
+
+
 ## 현재 단계
 
 **단계 4: 결측·이상치 처리 및 검증 설계 단계**
@@ -23,8 +26,8 @@
 | 과거 통합 SQL/CSV | 폐기 완료 | `label_churn_28d`가 새 타깃과 불일치하여 정본에서 제거 |
 | 최종 통합 노트북 | 완료 | `02_Integrated_Table.ipynb`, pandas 통합 및 검증 구현 |
 | 전체 코호트 정본 | 완료 | `CSV_files/통합 버전/landmark25_all_cohorts.csv` |
-| 결측·이상치 처리 | 미착수 | `03_Missing_Outlier.ipynb`가 비어 있음 |
-| 통합 후 공선성 재검증 | 미착수 | `04_Collinearity_Recheck.ipynb`가 비어 있음 |
+| 결측·이상치 처리 | 미착수 | `03_Missing_Outlier.ipynb`가 비어 있음 (당시 이름 → 현 `04_Missing_Outlier`) |
+| 통합 후 공선성 재검증 | 미착수 | `04_Collinearity_Recheck.ipynb`가 비어 있음 (당시 이름 → 현 `05_Collinearity_Recheck`) |
 | 정식 모델 비교 | 미완료 | 초기 RF 실험만 존재 |
 | 모델 해석·검증 | 미착수 | SHAP, 임계값, 오류 분석 필요 |
 | 발표/대시보드/보고서 | 미착수 | 중간 PPT 외 최종 산출물 없음 |

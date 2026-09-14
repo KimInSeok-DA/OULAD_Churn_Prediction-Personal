@@ -45,7 +45,7 @@ N이 늦어지면 행동과 제출 정보는 늘지만, 그사이 이탈한 학�
 | Recall @ 0.5 | **0.5990** | 0.5972 | 0.5965 |
 | F1 @ 0.5 | **0.4304** | 0.4123 | 0.4024 |
 
-기준 모델은 5-fold `StratifiedGroupKFold`와 `id_student` 그룹을 사용했다. 이 결과는 최종 모델 성능이 아니라 N 선택을 위한 동일 조건 비교다.
+기준 모델은 5-fold `StratifiedGroupKFold`와 `id_student` 그룹을 사용했다. 코호트 수치와 기준 모델 지표는 `Notebooks/02_Window_Integration/01_Window_Definition.ipynb` 5절에서 그대로 재현된다(2026-09-14 추가). 이 결과는 최종 모델 성능이 아니라 N 선택을 위한 동일 조건 비교다.
 
 ## 4. 최종 결정
 

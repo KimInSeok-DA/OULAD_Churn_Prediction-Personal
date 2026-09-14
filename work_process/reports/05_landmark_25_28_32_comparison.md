@@ -8,6 +8,8 @@
 
 기존 관측창 분석은 전체 이탈자를 중심으로 신호 강도를 비교했다. 이번 분석은 실제 N일 시점에 개입할 수 있는 학생만 남긴 랜드마크 코호트를 사용했다.
 
+> **2026-09-14 추가**: 3·4절의 코호트 수치와 기준 모델 지표는 `Notebooks/02_Window_Integration/01_Window_Definition.ipynb` 5절에서 그대로 재현된다(당시 계산 코드는 저장소에 없었음).
+
 ## 2. 코호트 정의
 
 - 기본 단위: `(id_student, code_module, code_presentation)` 1행
