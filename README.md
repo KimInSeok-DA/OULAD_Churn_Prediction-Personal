@@ -56,6 +56,7 @@ OULAD(Open University Learning Analytics Dataset)로 **개강 후 25일 시점 �
   - `통합 버전/`: 25일 코호트 정본(`landmark25_all_cohorts.csv`), 정제 모델 테이블, 피처 명세
   - `모델링/`: 모델 비교·중요도·등급·2차 규칙·사유 코드·공정성·민감도·과목 설계 산출물
 - `docs/`: 최종 분석 보고서, 포트폴리오 요약, 데이터 사전, 기획서
+- `work_process/`: 판단 기록(대안·근거·트레이드오프)과 단계별 보고서. 첫 모델링 → 파이프라인 검증 → 개정 과정도 여기에 있다. 결과만 볼 때는 읽지 않아도 된다([안내](./work_process/README.md))
 - `reference_materials/personal_prework`: 스터디 지원용 개인 선행 분석(참고용, 최종 결과 아님)
 
 ## 실행 환경

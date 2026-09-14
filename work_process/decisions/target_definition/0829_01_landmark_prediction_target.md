@@ -49,7 +49,7 @@
 
 N은 별도 비교표에서 코호트 크기, 양성률, 평가 기회 커버리지, 조기성, 모델 성능을 같은 데이터 계약으로 재계산한 뒤 확정한다.
 
-2026-08-29 재계산 결과 25일이 대상자와 향후 이탈자를 가장 많이 보존했고, 동일 조건 Logistic 기준 모델에서도 PR-AUC 0.3908로 28일(0.3696), 32일(0.3583)보다 높았다. 상세 근거는 `work_process/reports/05_landmark_25_28_32_comparison.md`에 있다.
+2026-08-29 재계산 결과 25일이 대상자와 향후 이탈자를 가장 많이 보존했고, 동일 조건 Logistic 기준 모델에서도 PR-AUC 0.3908로 28일(0.3696), 32일(0.3583)보다 높았다. 상세 근거는 `work_process/reports/05_landmark_25_28_32_comparison.md`에 있고, 재현 코드는 `01_Window_Definition` 5절이다(2026-09-14 추가).
 
 후속 결정 `work_process/decisions/modeling/0902_01_landmark_n25_final.md`에서 **N=25일을 최종 확정**했다.
 
