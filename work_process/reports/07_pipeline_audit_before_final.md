@@ -147,7 +147,7 @@ XGBoost(`scale_pos_weight`) OOF 확률을 10분위로 나눠 실제 이탈률과
 
 기존 EDA(`01_EDA_Basic`)는 원본 테이블 단위였고, 관측창 분석은 이탈자 중심 신호 비교였다. **25일 코호트 기준으로 피처 × 타깃, 모듈 × 학기, 학기 간 분포를 그려본 단계가 없다.** 1·4·5번 발견은 모두 이런 표를 한 번만 그렸어도 모델링 전에 드러났을 내용이다.
 
-**보완안**: `Notebooks/02_Window_Integration/05_Landmark25_EDA.ipynb`(가칭) 신설. 최소 구성:
+**보완안**: `Notebooks/02_Window_Integration/05_Landmark25_EDA.ipynb`(가칭, 이후 현 `03_Landmark25_EDA`로 신설) 신설. 최소 구성:
 
 1. 타깃 분포: 전체 / 모듈 × 학기 이탈률 히트맵
 2. 수치형 피처 × 타깃: 분위별 이탈률 곡선, 이탈/잔류 분포 비교(로그 스케일)
@@ -268,7 +268,7 @@ OULAD 원 논문 기준 AAA·BBB·GGG는 사회과학(Social Sciences), CCC·DDD
 
 | 순서 | 작업 | 산출물 | 결정 필요 |
 |---:|---|---|---|
-| 1 | 25일 코호트 EDA 노트북 작성 (3.3절 구성) | `05_Landmark25_EDA.ipynb` | 없음 |
+| 1 | 25일 코호트 EDA 노트북 작성 (3.3절 구성) | `05_Landmark25_EDA.ipynb`(가칭, 현 `03_Landmark25_EDA`) | 없음 |
 | 2 | 평가 기회·이월 정의 결정 (2.1 A/B/C, 3.1) → `02_Integrated_Table` 수정·재생성 | 통합 정본 갱신, 결정 문서 | **예** |
 | 3 | 03·04 노트북 재실행, `imd_band` 해석 수정 | `model_df_clean`, `feature_spec` 갱신 | 없음 |
 | 4 | 모델링 노트북에 학기 단위 검증 보조 지표 + 확률 보정 추가 후 재실행 | `01_Baseline_Models` 갱신 | 보정 방식 |

@@ -9,8 +9,8 @@
 
 - 결정일: 2026-09-12
 - 상태: 최종 확정
-- 적용 범위: `Notebooks/02_Window_Integration/03_Missing_Outlier.ipynb`(데이터셋 단계 처리) 및 이후 모델별 전처리 파이프라인(모델 단계 처리)
-- 근거 노트북: `Notebooks/02_Window_Integration/03_Missing_Outlier.ipynb` (4~6절)
+- 적용 범위: `Notebooks/02_Window_Integration/03_Missing_Outlier.ipynb`(당시 이름 → 현 `04_Missing_Outlier`, 데이터셋 단계 처리) 및 이후 모델별 전처리 파이프라인(모델 단계 처리)
+- 근거 노트북: `Notebooks/02_Window_Integration/03_Missing_Outlier.ipynb` (4~6절, 현 `04_Missing_Outlier`)
 
 ## 1. 배경
 
@@ -125,7 +125,7 @@
 
 ## 7. 다음 작업
 
-1. 4절 방침을 `03_Missing_Outlier.ipynb` 6절에 반영해 `imd_band` `'Unknown'` 처리와
+1. 4절 방침을 `03_Missing_Outlier.ipynb`(현 `04_Missing_Outlier`) 6절에 반영해 `imd_band` `'Unknown'` 처리와
    `date_registration` 7행 제외를 실제로 적용한다.
 2. 이상치 점검(`total_click_25`, `avg_submit_delay_25` 등)을 같은 노트북에서 이어서 진행한다.
 3. 5절의 모델별 전략에 따라 모델링 단계에서 `Pipeline` 기반 대치·인코딩을 구현한다.

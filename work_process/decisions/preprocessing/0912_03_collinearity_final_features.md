@@ -26,8 +26,8 @@
 
 - 결정일: 2026-09-12
 - 상태: 최종 확정
-- 적용 범위: `Notebooks/02_Window_Integration/04_Collinearity_Recheck.ipynb` 및 이후 모든 모델링
-- 근거 노트북: `Notebooks/02_Window_Integration/04_Collinearity_Recheck.ipynb` (전체)
+- 적용 범위: `Notebooks/02_Window_Integration/04_Collinearity_Recheck.ipynb`(당시 이름 → 현 `05_Collinearity_Recheck`) 및 이후 모든 모델링
+- 근거 노트북: `Notebooks/02_Window_Integration/04_Collinearity_Recheck.ipynb` (전체, 현 `05_Collinearity_Recheck`)
 - 선행 문서: [[0912_01_missing_value_policy]], [[0912_02_outlier_policy]]
 - 대응 계획: `work_process/reports/04_next_steps.md` P3
 
@@ -36,7 +36,7 @@
 `model_df_clean`(27,654행, 양성 5,246건)을 대상으로 최종 모델 피처를 확정한다. Logistic
 계수를 해석하기 전에 반드시 끝내야 하는 단계다.
 
-기존 `04_Collinearity_Recheck.ipynb`는 2026-08-02 커밋(`c5f6793`) 이후 **0바이트 파일**로
+기존 `04_Collinearity_Recheck.ipynb`(현 `05_Collinearity_Recheck`)는 2026-08-02 커밋(`c5f6793`) 이후 **0바이트 파일**로
 남아 있었다(JSON 파싱 불가). 내용을 새로 작성했다.
 
 ## 2. 수학적 종속성 — 항등식 검증 결과 (위반 0건)

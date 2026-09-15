@@ -8,9 +8,9 @@
 
 - 결정일: 2026-09-12
 - 상태: 최종 확정
-- 적용 범위: `Notebooks/02_Window_Integration/03_Missing_Outlier.ipynb`(7~8절, 점검) 및 이후
+- 적용 범위: `Notebooks/02_Window_Integration/03_Missing_Outlier.ipynb`(당시 이름 → 현 `04_Missing_Outlier`, 7~8절, 점검) 및 이후
   모델별 전처리 파이프라인(모델 단계 처리)
-- 근거 노트북: `Notebooks/02_Window_Integration/03_Missing_Outlier.ipynb` (7~8절)
+- 근거 노트북: `Notebooks/02_Window_Integration/03_Missing_Outlier.ipynb` (7~8절, 현 `04_Missing_Outlier`)
 - 선행 문서: [[0912_01_missing_value_policy]] (같은 노트북, 결측치 처리 방침)
 
 ## 1. 배경
